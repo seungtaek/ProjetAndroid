@@ -73,7 +73,7 @@
         android:layout_gravity="fill_horizontal"
         android:text="@string/detail_match_datetime" />
 
-    <TextView
+	<TextView
 		android:id="@+id/activity_detail_match_textView_datetime"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"

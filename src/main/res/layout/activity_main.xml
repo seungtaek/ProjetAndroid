@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="${relativePackage}.${activityClass}" >
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical" >
+
+		<Button
+			android:id="@+id/activity_main_button_launch_player"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/player"
+			/>
+		<Button
+			android:id="@+id/activity_main_button_launch_game"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/game" />
+		<Button
+			android:id="@+id/activity_main_button_launch_match"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/match" />
+		<Button
+			android:id="@+id/activity_main_button_launch_playersmatch"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/playersmatch" />
+
+		<Button
+			android:id="@+id/activity_main_button_launch_network_status"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/network_status" />
+
+		<Button
+            android:id="@+id/activity_main_button_launch_network_call"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/network_call" />
+
+		<Button
+			android:id="@+id/activity_main_button_a_propos"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/a_propos" />
+	</LinearLayout>
+</ScrollView>

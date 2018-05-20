@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GeneratedApplication</string>
+	<string name="player">player</string>
+	<string name="detail_player_id">player id</string>
+	<string name="detail_player_name">player name</string>
+	<string name="detail_player_firstname">player firstname</string>
+	<string name="detail_player_comment">player comment</string>
+	<string name="detail_player_picture">player picture</string>
+	<string name="game">game</string>
+	<string name="detail_game_id">game id</string>
+	<string name="detail_game_name">game name</string>
+	<string name="detail_game_nbr_players_by_team">game nbr_players_by_team</string>
+	<string name="match">match</string>
+	<string name="detail_match_id">match id</string>
+	<string name="detail_match_id_activity">match id_activity</string>
+	<string name="detail_match_description">match description</string>
+	<string name="detail_match_score_team_1">match score_team_1</string>
+	<string name="detail_match_score_team_2">match score_team_2</string>
+	<string name="detail_match_datetime">match datetime</string>
+	<string name="playersmatch">playersmatch</string>
+	<string name="detail_playersmatch_id">playersmatch id</string>
+	<string name="detail_playersmatch_id_player">playersmatch id_player</string>
+	<string name="detail_playersmatch_id_match">playersmatch id_match</string>
+	<string name="detail_playersmatch_team">playersmatch team</string>
+	 <string name="a_propos">A propos</string>
+
+
+	<string name="network_status">network_status</string>
+	<string name="network_status_connected">Connected</string>
+	<string name="network_status_broadband">Broadband</string>
+
+	<string name="network_call">network call</string>
+	<string name="network_call_button">Call dummy</string>
+	<string name="call_load_player">Call : Load player</string>
+	<string name="call_load_game">Call : Load game</string>
+	<string name="call_load_match">Call : Load match</string>
+	<string name="call_load_playersmatch">Call : Load playersmatch</string>
+
+</resources>

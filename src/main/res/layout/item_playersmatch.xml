@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="${relativePackage}.${activityClass}">
+
+ 		<TextView
+            android:id="@+id/item_playersmatch_textView_id"
+            style="@style/PlayersmatchId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Id" />
+ 		<TextView
+            android:id="@+id/item_playersmatch_textView_id_player"
+            style="@style/PlayersmatchIdPlayer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="IdPlayer" />
+ 		<TextView
+            android:id="@+id/item_playersmatch_textView_id_match"
+            style="@style/PlayersmatchIdMatch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="IdMatch" />
+ 		<TextView
+            android:id="@+id/item_playersmatch_textView_team"
+            style="@style/PlayersmatchTeam"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Team" />
+
+</LinearLayout>

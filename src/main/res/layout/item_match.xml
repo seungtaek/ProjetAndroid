@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="${relativePackage}.${activityClass}">
+
+ 		<TextView
+            android:id="@+id/item_match_textView_id"
+            style="@style/MatchId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Id" />
+ 		<TextView
+            android:id="@+id/item_match_textView_id_activity"
+            style="@style/MatchIdActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="IdActivity" />
+ 		<TextView
+            android:id="@+id/item_match_textView_description"
+            style="@style/MatchDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Description" />
+ 		<TextView
+            android:id="@+id/item_match_textView_score_team_1"
+            style="@style/MatchScoreTeam1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ScoreTeam1" />
+ 		<TextView
+            android:id="@+id/item_match_textView_score_team_2"
+            style="@style/MatchScoreTeam2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ScoreTeam2" />
+ 		<TextView
+            android:id="@+id/item_match_textView_datetime"
+            style="@style/MatchDatetime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Datetime" />
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+		<TextView
+			android:layout_width="match_parent"
+			tools:text="Call"
+			android:layout_height="wrap_content"
+			android:id="@+id/activity_network_call_textView_message"
+			android:gravity="center_horizontal" />
+			
+        <Button
+            android:id="@+id/activity_network_call_button_call_dummy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/network_call_button" />
+
+		<Button
+			android:id="@+id/activity_network_call_button_call_player"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/call_load_player" />
+		<Button
+			android:id="@+id/activity_network_call_button_call_game"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/call_load_game" />
+		<Button
+			android:id="@+id/activity_network_call_button_call_match"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/call_load_match" />
+		<Button
+			android:id="@+id/activity_network_call_button_call_playersmatch"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/call_load_playersmatch" />
+
+    </LinearLayout>
+
+</ScrollView>

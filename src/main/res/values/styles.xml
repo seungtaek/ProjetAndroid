@@ -1,0 +1,136 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+		<item name="android:textColor">@color/text</item>
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+	<style name="DetailLabel" parent="AppTheme">
+		<!-- Generic parameters for DetailLabel -->
+	</style>
+	
+	<style name="DetailValueOdd" parent="AppTheme">
+		<!-- Generic parameters for DetailValueOdd -->
+	</style>
+	
+	<style name="DetailLabelOdd" parent="AppTheme">
+		<!-- Generic parameters for DetailValueOdd -->
+	</style>
+	
+	<style name="DetailValueEven" parent="AppTheme">
+		<!-- Generic parameters for DetailValueOdd -->
+	</style>
+	
+	<style name="DetailLabelEven" parent="AppTheme">
+		<!-- Generic parameters for DetailValueOdd -->
+	</style>
+	
+	<!-- Player -->
+	<style name="Player" parent="AppTheme">
+		<!-- Generic parameters for Player -->
+	</style>
+			
+
+	<style name="PlayerId" parent="Player">
+        <!-- Specific parameters for PlayerId -->
+    </style>
+
+	<style name="PlayerName" parent="Player">
+        <!-- Specific parameters for PlayerName -->
+    </style>
+
+	<style name="PlayerFirstname" parent="Player">
+        <!-- Specific parameters for PlayerFirstname -->
+    </style>
+
+	<style name="PlayerComment" parent="Player">
+        <!-- Specific parameters for PlayerComment -->
+    </style>
+
+	<style name="PlayerPicture" parent="Player">
+        <!-- Specific parameters for PlayerPicture -->
+    </style>
+	
+	<!-- Game -->
+	<style name="Game" parent="AppTheme">
+		<!-- Generic parameters for Game -->
+	</style>
+			
+
+	<style name="GameId" parent="Game">
+        <!-- Specific parameters for GameId -->
+    </style>
+
+	<style name="GameName" parent="Game">
+        <!-- Specific parameters for GameName -->
+    </style>
+
+	<style name="GameNbrPlayersByTeam" parent="Game">
+        <!-- Specific parameters for GameNbrPlayersByTeam -->
+    </style>
+	
+	<!-- Match -->
+	<style name="Match" parent="AppTheme">
+		<!-- Generic parameters for Match -->
+	</style>
+			
+
+	<style name="MatchId" parent="Match">
+        <!-- Specific parameters for MatchId -->
+    </style>
+
+	<style name="MatchIdActivity" parent="Match">
+        <!-- Specific parameters for MatchIdActivity -->
+    </style>
+
+	<style name="MatchDescription" parent="Match">
+        <!-- Specific parameters for MatchDescription -->
+    </style>
+
+	<style name="MatchScoreTeam1" parent="Match">
+        <!-- Specific parameters for MatchScoreTeam1 -->
+    </style>
+
+	<style name="MatchScoreTeam2" parent="Match">
+        <!-- Specific parameters for MatchScoreTeam2 -->
+    </style>
+
+	<style name="MatchDatetime" parent="Match">
+        <!-- Specific parameters for MatchDatetime -->
+    </style>
+	
+	<!-- Playersmatch -->
+	<style name="Playersmatch" parent="AppTheme">
+		<!-- Generic parameters for Playersmatch -->
+	</style>
+			
+
+	<style name="PlayersmatchId" parent="Playersmatch">
+        <!-- Specific parameters for PlayersmatchId -->
+    </style>
+
+	<style name="PlayersmatchIdPlayer" parent="Playersmatch">
+        <!-- Specific parameters for PlayersmatchIdPlayer -->
+    </style>
+
+	<style name="PlayersmatchIdMatch" parent="Playersmatch">
+        <!-- Specific parameters for PlayersmatchIdMatch -->
+    </style>
+
+	<style name="PlayersmatchTeam" parent="Playersmatch">
+        <!-- Specific parameters for PlayersmatchTeam -->
+    </style>
+	</resources>

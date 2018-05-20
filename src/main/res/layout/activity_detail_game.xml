@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="2" 
+  	tools:context="${relativePackage}.${activityClass}">
+
+    <TextView
+        style="@style/DetailLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:text="@string/detail_game_id" />
+
+    <TextView
+		android:id="@+id/activity_detail_game_textView_id"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="fill_horizontal" />
+    <TextView
+        style="@style/DetailLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:text="@string/detail_game_name" />
+
+    <TextView
+		android:id="@+id/activity_detail_game_textView_name"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="fill_horizontal" />
+    <TextView
+        style="@style/DetailLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:text="@string/detail_game_nbr_players_by_team" />
+
+    <TextView
+		android:id="@+id/activity_detail_game_textView_nbr_players_by_team"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="fill_horizontal" />
+</GridLayout>

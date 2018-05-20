@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="${relativePackage}.${activityClass}">
+
+ 		<TextView
+            android:id="@+id/item_player_textView_id"
+            style="@style/PlayerId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Id" />
+ 		<TextView
+            android:id="@+id/item_player_textView_name"
+            style="@style/PlayerName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Name" />
+ 		<TextView
+            android:id="@+id/item_player_textView_firstname"
+            style="@style/PlayerFirstname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Firstname" />
+ 		<TextView
+            android:id="@+id/item_player_textView_comment"
+            style="@style/PlayerComment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Comment" />
+ 		<TextView
+            android:id="@+id/item_player_textView_picture"
+            style="@style/PlayerPicture"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Picture" />
+
+</LinearLayout>

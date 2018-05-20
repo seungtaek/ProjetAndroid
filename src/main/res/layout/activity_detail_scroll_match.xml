@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            style="@style/DetailValueOdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/DetailLabelOdd"
+                android:layout_width="@dimen/detail_label_width"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                android:gravity="right"
+                android:paddingRight="@dimen/detail_values_margin"
+                android:text="@string/detail_match_id" />
+
+            <TextView
+	        android:id="@+id/activity_match_detail_textView_id"
+ 	        android:layout_width="wrap_content"
+ 	        android:layout_height="wrap_content"
+ 	        android:layout_gravity="fill_horizontal" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/DetailValueEven"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/DetailLabelEven"
+                android:layout_width="@dimen/detail_label_width"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                android:gravity="right"
+                android:paddingRight="@dimen/detail_values_margin"
+                android:text="@string/detail_match_id_activity" />
+
+            <TextView
+	        android:id="@+id/activity_match_detail_textView_id_activity"
+ 	        android:layout_width="wrap_content"
+ 	        android:layout_height="wrap_content"
+ 	        android:layout_gravity="fill_horizontal" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/DetailValueOdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/DetailLabelOdd"
+                android:layout_width="@dimen/detail_label_width"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                android:gravity="right"
+                android:paddingRight="@dimen/detail_values_margin"
+                android:text="@string/detail_match_description" />
+
+            <TextView
+	        android:id="@+id/activity_match_detail_textView_description"
+ 	        android:layout_width="wrap_content"
+ 	        android:layout_height="wrap_content"
+ 	        android:layout_gravity="fill_horizontal" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/DetailValueEven"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/DetailLabelEven"
+                android:layout_width="@dimen/detail_label_width"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                android:gravity="right"
+                android:paddingRight="@dimen/detail_values_margin"
+                android:text="@string/detail_match_score_team_1" />
+
+            <TextView
+	        android:id="@+id/activity_match_detail_textView_score_team_1"
+ 	        android:layout_width="wrap_content"
+ 	        android:layout_height="wrap_content"
+ 	        android:layout_gravity="fill_horizontal" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/DetailValueOdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/DetailLabelOdd"
+                android:layout_width="@dimen/detail_label_width"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                android:gravity="right"
+                android:paddingRight="@dimen/detail_values_margin"
+                android:text="@string/detail_match_score_team_2" />
+
+            <TextView
+	        android:id="@+id/activity_match_detail_textView_score_team_2"
+ 	        android:layout_width="wrap_content"
+ 	        android:layout_height="wrap_content"
+ 	        android:layout_gravity="fill_horizontal" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/DetailValueEven"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/DetailLabelEven"
+                android:layout_width="@dimen/detail_label_width"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                android:gravity="right"
+                android:paddingRight="@dimen/detail_values_margin"
+                android:text="@string/detail_match_datetime" />
+
+            <TextView
+	        android:id="@+id/activity_match_detail_textView_datetime"
+ 	        android:layout_width="wrap_content"
+ 	        android:layout_height="wrap_content"
+ 	        android:layout_gravity="fill_horizontal" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,12 +1,21 @@
 package com.ynov.android;
 
 import android.app.Activity;
+import android.app.NotificationManager;
+import android.content.Context;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.support.v4.app.NotificationCompat;
+import android.util.Log;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.ynov.android.database.DatabaseManager;
 import com.ynov.android.database.PlayerDao;
 import com.ynov.android.model.Player;
+
+import java.io.InputStream;
+import java.net.URL;
 
 public class DetailPlayerActivity extends Activity{
 
@@ -38,7 +47,35 @@ public class DetailPlayerActivity extends Activity{
 		((TextView)findViewById(R.id.activity_detail_player_textView_name)).setText(player.getName() );
 		((TextView)findViewById(R.id.activity_detail_player_textView_firstname)).setText(player.getFirstname() );
 		((TextView)findViewById(R.id.activity_detail_player_textView_comment)).setText(player.getComment() );
-		((TextView)findViewById(R.id.activity_detail_player_textView_picture)).setText(player.getPicture() );
 
+
+		Drawable imageUser = LoadImageFromWebOperations(player.getPicture());
+
+		((ImageView)findViewById(R.id.activity_detail_player_textView_picture)).setImageDrawable(imageUser);
+
+
+		NotificationCompat.Builder mBuilder =
+				new NotificationCompat.Builder(this)
+						.setSmallIcon(R.mipmap.ic_launcher)
+						.setContentTitle("Hello user")
+						.setContentText("vous avez regardé "+player.getFirstname());
+		NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+		notificationManager.notify(1, mBuilder.build());
+
+
+
+	}
+	public static Drawable LoadImageFromWebOperations(String url) {
+		try {
+			url = url.replace("m/i", "m/ynovapi/i");
+			Log.d(TAG, "new url: "+url);
+			InputStream is = (InputStream) new URL(url).getContent();
+			Drawable d = Drawable.createFromStream(is, "src name");
+			Log.d(TAG, "LoadImageFromWebOperations: worked");
+			return d;
+		} catch (Exception e) {
+			Log.d(TAG, e.toString());
+			return null;
+		}
 	}
 }

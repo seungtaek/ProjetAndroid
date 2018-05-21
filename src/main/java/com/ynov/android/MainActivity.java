@@ -1,8 +1,13 @@
 package com.ynov.android;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -16,8 +21,11 @@ import com.ynov.android.model.Game;
 import com.ynov.android.model.Match;
 import com.ynov.android.model.Player;
 import com.ynov.android.model.Playersmatch;
+import com.ynov.android.tools.NetworkTool;
 
 import java.sql.SQLException;
+
+import static android.content.ContentValues.TAG;
 
 //Imports for the local model
 
@@ -120,6 +128,17 @@ public class MainActivity extends Activity {
                 startActivity(intent);
             }
         });
+
+        ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
+        if(NetworkTool.isConnected(activeNetwork))
+            Log.d(TAG, "Status :Network enable");
+        else {
+            Log.d(TAG, "Status :Not good");
+            Button btnCall = findViewById(R.id.activity_main_button_launch_network_call);
+            btnCall.setVisibility(View.GONE);
+
+        }
 
     }
 }

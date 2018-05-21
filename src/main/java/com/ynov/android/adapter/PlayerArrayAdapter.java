@@ -1,12 +1,19 @@
 package com.ynov.android.adapter;
 
+import java.io.InputStream;
 import java.util.List;
 
+import android.os.StrictMode;
+import android.util.Log;
+import java.net.URL;
+
+import android.graphics.drawable.Drawable;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import com.ynov.android.R;
@@ -33,7 +40,8 @@ public class PlayerArrayAdapter extends ArrayAdapter<Player>{
 
 	private class ViewHolder {
 
-							TextView tvId, tvName, tvFirstname, tvComment, tvPicture;
+							TextView tvId, tvName, tvFirstname, tvComment;
+							ImageView tvPicture;
 	}
 
 	@Override
@@ -54,7 +62,7 @@ public class PlayerArrayAdapter extends ArrayAdapter<Player>{
 			holder.tvName = (TextView)v.findViewById(R.id.item_player_textView_name);
 			holder.tvFirstname = (TextView)v.findViewById(R.id.item_player_textView_firstname);
 			holder.tvComment = (TextView)v.findViewById(R.id.item_player_textView_comment);
-			holder.tvPicture = (TextView)v.findViewById(R.id.item_player_textView_picture);
+			holder.tvPicture = (ImageView)v.findViewById(R.id.item_player_textView_picture);
 			v.setTag(holder);
 		} else {
 			holder = (ViewHolder) convertView.getTag();
@@ -83,12 +91,31 @@ public class PlayerArrayAdapter extends ArrayAdapter<Player>{
 		}
 		
 		if(currentObject.getPicture() != null && currentObject.getPicture().trim().length()>0 ){
-			holder.tvPicture.setText( currentObject.getPicture().trim() );
+			StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+
+			StrictMode.setThreadPolicy(policy);
+			Drawable imageUser = LoadImageFromWebOperations(currentObject.getPicture());
+			holder.tvPicture.setImageDrawable(imageUser);
 		}else{
-			holder.tvPicture.setText("");
+
+			holder.tvPicture.setImageDrawable(null);
 		}
 	
 		//Return the current view.
 		return v;
+	}
+
+	public static Drawable LoadImageFromWebOperations(String url) {
+		try {
+			url = url.replace("m/i", "m/ynovapi/i");
+			Log.d(TAG, "new url: "+url);
+			InputStream is = (InputStream) new URL(url).getContent();
+			Drawable d = Drawable.createFromStream(is, "src name");
+			Log.d(TAG, "LoadImageFromWebOperations: worked");
+			return d;
+		} catch (Exception e) {
+			Log.d(TAG, e.toString());
+			return null;
+		}
 	}
 }

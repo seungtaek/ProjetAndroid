@@ -34,12 +34,12 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Comment" />
- 		<TextView
+ 		<ImageView
             android:id="@+id/item_player_textView_picture"
             style="@style/PlayerPicture"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Picture" />
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+			android:layout_gravity="fill_horizontal"
+           />
 
 </LinearLayout>
